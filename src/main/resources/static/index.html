@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>User Management App</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div class="app">
+
+    <h1>User Management Dashboard</h1>
+
+    <!-- Tabs -->
+    <div class="tabs">
+        <button class="tab-btn active" onclick="openTab('users')">Users</button>
+        <button class="tab-btn" onclick="openTab('analytics')">Analytics</button>
+        <button class="tab-btn" onclick="openTab('settings')">Settings</button>
+        <button class="tab-btn" onclick="openTab('reports')">Reports</button>
+        <button class="tab-btn" onclick="openTab('notifications')">Notifications</button>
+        <button class="tab-btn" onclick="openTab('tasks')">Tasks</button>
+        <button class="tab-btn" onclick="openTab('messages')">Messages</button>
+        <button class="tab-btn" onclick="openTab('profile')">Profile</button>
+        <button class="tab-btn" onclick="openTab('support')">Support</button>
+        <button class="tab-btn" onclick="openTab('logs')">Logs</button>
+    </div>
+
+    <!-- Tab Content -->
+    <div id="users" class="tab-content">
+        <h2>Users</h2>
+        <form id="userForm">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Create User</button>
+        </form>
+        <p id="message"></p>
+        <table>
+            <thead>
+                <tr><th>ID</th><th>Username</th><th>Email</th></tr>
+            </thead>
+            <tbody id="userTableBody"></tbody>
+        </table>
+    </div>
+
+    <div id="analytics" class="tab-content">
+        <h2>Analytics</h2>
+        <p>Feature placeholders: charts, stats, KPIs...</p>
+    </div>
+
+    <div id="settings" class="tab-content">
+        <h2>Settings</h2>
+        <p>Change app configurations, themes, permissions...</p>
+    </div>
+
+    <div id="reports" class="tab-content">
+        <h2>Reports</h2>
+        <p>Download user activity, system logs, etc.</p>
+    </div>
+
+    <div id="notifications" class="tab-content">
+        <h2>Notifications</h2>
+        <p>Display system alerts or messages.</p>
+    </div>
+
+    <div id="tasks" class="tab-content">
+        <h2>Tasks</h2>
+        <p>Task management / TODO list placeholders.</p>
+    </div>
+
+    <div id="messages" class="tab-content">
+        <h2>Messages</h2>
+        <p>Chat or messaging system placeholder.</p>
+    </div>
+
+    <div id="profile" class="tab-content">
+        <h2>Profile</h2>
+        <p>Edit user profile details here.</p>
+    </div>
+
+    <div id="support" class="tab-content">
+        <h2>Support</h2>
+        <p>Help center, FAQs, contact form placeholder.</p>
+    </div>
+
+    <div id="logs" class="tab-content">
+        <h2>Logs</h2>
+        <p>Application logs, activity history, etc.</p>
+    </div>
+
+</div>
+
+<script src="/js/app.js"></script>
+</body>
+</html>
